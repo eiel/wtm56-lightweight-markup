@@ -1,0 +1,249 @@
+WTM56 軽量マークアップ言語で気楽にマークアップ
+
+* 目的
+- Markdown 使おうかな。と思ってもらう
+- 軽量マークアップ言語の存在を知ってもらう
+** サブ目的
+- markdown を使って文書を作成するという選択肢を
+  - プログラマが好むテキスト形式、メモ形式
+    - やりとりがスムーズになるかも?
+    - 文章に気軽に意味付けできる
+  - もちろん、表現力不足なら Word など を使いましょう
+    - 些細なドキュメントを Word ファイルでおくってくんな!
+- 文章メインの blog や 日記、 メール などでは Markdown は有効
+- ついでに 他の軽量マークアップ言語を紹介
+- ついでに org-mode を紹介
+- ついでに 静的サイトジェネレータ を紹介
+** 自分が軽量マークアップ言語を知ってよかったこと
+- 文書を作るのが楽になった
+* 対象者
+- Markdown の使い方がわからない人
+- 軽量マークアップ言語というものを知らない人
+* 内容
+** 自己紹介 - 1分
+** 告知 (オープンセミナー/ 岡山 and 広島スタッフゆるぼ) - 1分
+** 今日の目的 - 2分
+*** 目的
+- 軽量マークアップ言語というものがあるのを知ってもらう
+- Markdown 使おうかな。って思ってもらう。 (勝利条件)
+- プログラマがふつうに生きてたら毎日のように書くよね♪ on Github <- 目的じゃねぇ
+** 軽量マークアップ言語について -  10分
+# 聞き手は何を知りたいか？
+# 軽量マークアップ言語ってなに？便利なの？必要なの?
+#  - 教養。使うかどうかは状況次第。選択肢のひとつ
+#  - オープンソースコミュニティでは一般的な文書形式
+#  - 知っているほうが相手に伝えたいことを伝えやすい on Github
+#
+# どうして軽量マークアップ言語を使うの
+# - プレーンテキストな形式がいい
+# - 記述量が少ないので楽
+# - 様々な形式で出力可能
+*** 軽量マークアップ言語の利用例
+*** 軽量マークアップ言語って何?
+- 先になにをするものか説明する
+- 文書ファイルの形式のひとつ
+  - PDFとかWordとかHTMLとか
+- 記述量が少ないマークアップ言語
+- HTML や PDF に変換できます
+- スライドにも変換できたり
+*** マークアップ言語って何？
+- 代表的なもの
+  - HTML
+  - TeX
+  - XML
+*** マークアップって何？
+- プレーンテキストに文章の構造やデザインなどを直接記述できる
+- ! マークアップの例
+  - 軽量マークアップ言語は記述量が少ないのが特徴です。
+  # 記述量を強調したい
+  - 軽量マークアップ言語は<strong>記述量が少ない</strong>のが特徴です。
+*** 軽量マークアップ言語ってどんなの?
+- 例を置いてる場所
+  - https://github.com/eiel/wtm56-leightweight
+- # そろそろ記述量の少なさが気になるはずので例
+- 簡単な文法規則しかないマークアップ言語
+- 軽量マークアップ言語によってはHTML以外も出力できる
+  - たとえば PDF
+- 読みやすく変更しやすい
+    - 重量マークアップ言語
+*** 軽量マークアップ言語の用途
+- ちょっとしたドキュメント
+  - 記述量は少いし、高い表現力は必要ない。
+- ブログの記述に
+  - ウェブフォームでのWYGSYGが嫌いな人におすすめ
+- メモをとるときに
+  - 変換しなくてもよみやすい
+  - ガチでマークアップする元気はない時に
+  - 人に見せる必要が場合は PDFに変換したり
+- Github でコメントを書くとき
+- バージョン管理したいドキュメント(git or mercurial)
+*** 文書つくるのに HTML じゃダメなの?
+- いいよ。
+- HTMLは表現力と柔軟性が高い。
+  - しかし、記述量が多い
+    - めんどくさい。
+  - 表現力を削って、記述量と可読性を上げたい
+  - なので、軽量マークアップ言語
+    - 軽量マークアップ言語に対して HTML は重量マークアップ言語
+*** 文書つくるのに Word じゃダメなの?
+- いいよ。
+- Word は 見た目どおりのままに編集できて便利。
+- 問題点
+  - アプリケーションが必要
+  - メールで Wordファイルが送らてくる例
+    - 専用アプリケーションでないと表示できない
+  - 見た目に囚われて、文章の構造を意識しない人がいる
+    - ここ見出しだから文字大きくしとくわー
+      - 見出しという意味付けをするべき
+      - 見た目では意味付けされてるため、見た目ではわからない
+  - ファイルサイズがでかい
+*** 別に軽量マークアップ言語じゃなくてもよくないか？
+- 軽量マークアップを使うと
+  - 見た目ではなく、記号で文書の意味を読みとれる
+- 自分が書かなくても、自分が読む機会があるかもしれない
+  - 読めるのにこしたこと
+- オープンソースでは、軽量マークアップ言語が使われてる - README
+  - 使うならドキュメント読む
+  - 読むなら正しく読めるに越したことはない
+- まー、プレーンテキストが好きなんです。お察しください。
+*** まとめ
+- 大事なのは
+  - 誰が何のために読む文書なのか
+    - 相手が読みやすい方法を選ぶ
+  - 誰が書く文書なのか
+    - 自分が楽で、自分が扱いやすい方法を選ぶ
+- 比較
+  |                | 軽量マークアップ言語 | HTML             | Word                       |
+  | 表現力         | 低い                 | 高い             | 高い                       |
+  | 記述量         | 少ない               | 多い             | そもそもマークアップしない |
+  | ファイルの中身 | 人にやさしい         | 人にもよめる     | 読む人は変態?              |
+  | ファイルサイズ | 小さい               | Wordよりは少ない | 大きい                     |
+- 補足 XML の軽量版は YAML や JSON があります
+  - マークアップではないけど。
+**** オレオレ視点
+- ドキュメントを読むとき
+  - HTML とか PDF で ハイパーにポータブルにリッチに読みたい
+- ドキュメントを書くとき
+  - プレーンテキストで気楽に書きたい
+** さまざまな軽量マークアップ言語を軽く紹介
+# どんなのがあるのか。
+# - Github でレンダリングできるものは全部紹介しとく
+*** HTML 比較対象
+*** asciidoc
+  - Unix界隈で。
+  - man とかの記述を楽に
+*** Mediawiki
+  - 普段からWikipediaをよく編集するなら
+  - 定義の記法がある
+*** corel
+*** markdown
+  - シンプル
+  - プレーンテキストでのよみやすさ
+  - できないことは HTML でかけばいい
+  - 最近よく使われる オススメ
+*** reSturacturedText
+  - Python界隈でよく使われる
+  - プレーンテキストでのよみやすさを重視
+  - 文法がやや細かい
+*** textile
+  - redmineのwikiとか
+  - rails製アプリ内でよく使われてる
+  - 最近オワコン気味
+*** Org Mode
+  - 高機能 - 表計算、スケジュール管理、TODOリストの自動生成
+  - Emacs による高すぎる支援機能
+  - プレーンテキストオフィス
+*** 他には
+  - はてな記法
+  - Pukiwip
+*** 文字数比較
+$ wc -m sample/* | sort -r | sed -e '1 d'
+ 583 sample/webtouch.html
+ 486 sample/webtouch.asciidoc
+ 458 sample/webtouch.rst
+ 390 sample/webtouch.md
+ 361 sample/webtouch.mediawiki
+ 350 sample/webtouch.org
+ 331 sample/webtouch.creole
+ 325 sample/webtouch.textile
+ 320 sample/webtouch.rdoc
+** Markdown のさわり - 10分
+# どの軽量マークアップ言語を使えばいいの？
+- いま最も流行な軽量マークアップ言語
+*** Markdown が使われてるとこ
+  - Github - プログラマが共同作業するところ
+    - コメント欄
+  - Railsのドキュメント
+    - Textile から変更された
+  - Tumblr
+  - はてなブログ
+  - Qiita
+  - WordPress や MovableType にもプラグインがあるよ
+*** Markdown の利点
+  - 軽量ながらも HTML と同等の表現力
+    - HTMLを直接かけます
+  - プレーンテキストの可読性が高い
+  -文法が少ない
+  - いかにも Markup を批判してて良い名前
+*** Markdown の文法
+- 見出し
+- リンク
+- 画像
+- HTMLが直接かけます
+- php Markdown Extra(拡張)
+*** Markdown エディタ
+- 生成されるHTMLをプレビューしながらかける
+  - どれがいいのか知りません
+  - Win - Markdown#editor
+    - http://hibara.org/software/markdownsharpeditor/
+  - Mac - Mou
+    - http://mouapp.com/
+*** その他プログラマ向けな話題
+    - 拡張がちらほらある
+    - redcarpet - 独自拡張も可能
+** org-mode のさわり - 2分
+- 高機能軽量マークアップ言語
+- Emacsによる圧倒的な支援機能
+*** org-mode でできること例
+- 例
+  - タスク管理
+  - 表計算
+** Markdown の個人的な利用例
+- 即席勉強会の資料
+- Github
+- Jekyll
+** 告知 (Git勉強会) - 1分
+** 告知 (すごいHaskell読書会) - 1分
+* ネタめも
+- github で見てもらう
+- railsdoc.eiel.info
+- rurema_review
+* 参考文献
+- Githubで利用できる 軽量マークアップ
+  - https://github.com/github/markup
+- Markdown
+  - http://daringfireball.net/projects/markdown/
+- Redcarpet (Markdown)
+  - https://github.com/vmg/redcarpet
+- Redcloth (Textile)
+  - http://redcloth.org/
+- PHP Markdown Extra
+  - http://michelf.ca/projects/php-markdown/extra/
+- Rdoc
+  - http://rdoc.sourceforge.net/
+- Org Mode
+  - http://orgmode.org/
+- Creole
+  - http://wikicreole.org/wiki/Creole1.0
+- mediawiki
+  - http://www.mediawiki.org/wiki/MediaWiki/ja
+- reStroucturedText
+  - http://docutils.sourceforge.net/rst.html
+- AsciiDoc
+  - http://www.methods.co.nz/asciidoc/userguide.html
+- Jekyll
+  - http://jekyllrb.com/
+- Pandoc
+  - http://johnmacfarlane.net/pandoc/
+- org-mode demo
+  - http://www.youtube.com/watch?v=hL0Bh-kDRIo
